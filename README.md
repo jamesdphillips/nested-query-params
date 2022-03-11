@@ -10,13 +10,13 @@
 
 <p align="center">
   <a href="#">
-    <img src="https://img.shields.io/github/commit-activity/m/jamesdphillips/nested-query-parser.svg?style=flat" />
+    <img src="https://img.shields.io/github/commit-activity/m/jamesdphillips/nested-query-params.svg?style=flat" />
   </a>
-  <a href="https://github.com/jamesdphillips/nested-query-parser/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/jamesdphillips/nested-query-parser.svg?style=flat" />
+  <a href="https://github.com/jamesdphillips/nested-query-params/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/jamesdphillips/nested-query-params.svg?style=flat" />
   </a>
-  <a href="https://circleci.com/gh/jamesdphillips/nested-query-parser">
-    <img src="https://circleci.com/gh/jamesdphillips/nested-query-parser/tree/master.svg?style=shield&circle-token=0b15707495fa6899226391b58d73a2526d87f9d4" />
+  <a href="https://circleci.com/gh/jamesdphillips/nested-query-params/tree/main">
+    <img src="https://circleci.com/gh/jamesdphillips/nested-query-params/tree/main.svg?style=svg" />
   </a>
 </p>
 
