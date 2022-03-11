@@ -6,8 +6,10 @@
 
       tspan {
         fill: rgba(0, 0, 0, 0.87);
+      }
 
-        @media (prefers-color-scheme: dark) {
+      @media (prefers-color-scheme: dark) {
+        tspan {
           fill: rgba(255, 255, 255);
         }
       }

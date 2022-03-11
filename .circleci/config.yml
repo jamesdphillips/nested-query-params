@@ -1,31 +1,10 @@
-# Golang CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-node/ for more details
-
 version: 2.1
 
-executors:
-  build_env:
-    resource_class: medium
-    docker:
-      - image: circleci/node:lts
-
-jobs:
-  spec:
-    executor: build_env
-    environment:
-      JEST_JUNIT_OUTPUT_DIR: "./test-results/spec"
-      JEST_JUNIT_OUTPUT_NAME: "results.xml"
-    steps:
-      - checkout
-      - run:
-          name: Run unit tests
-          command: npm test -- --ci --reporters=default --reporters=jest-junit
-      - store_test_results:
-          path: test-results
+orbs: 
+  node: circleci/node@5.0.0
 
 workflows:
-  version: 2
-  quality:
+  test:
     jobs:
-      - spec
+      - node/test:
+          test-results-for: jest
