@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "esnext",
+
+    /* Modules */
+    "module": "commonjs",
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": true,
+    "maxNodeModuleJsDepth": 1,
+
+    /* Emit */
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "lib/",
+    "rootDir": "./src",
+    "noEmit": false,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Type Checking */
+    "strict": true,
+
+    /* Completeness */
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["./node_modules", "./src/**/*.test.ts"]
+}
