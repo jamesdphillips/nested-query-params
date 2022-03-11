@@ -1,0 +1,48 @@
+<svg width="551" height="88" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: "SFMono-Regular", "SF Mono", Mono;
+    }
+
+    tspan {
+      fill: rgb(0, 0, 0);
+
+      @media (prefers-color-scheme: dark) {
+        fill: rgb(255, 255, 255);
+      }
+    }
+
+    .blue {
+      fill: #0091ff;
+    }
+
+    .green {
+      fill: #44d7b6;
+    }
+
+    .orange {
+      fill: #fa6400;
+    }
+
+    .purple {
+      fill: #6236ff;
+    }
+
+    .deemphasize {
+      fill-opacity: 0.67;
+    }
+  </style>
+
+  <g fill="none" fill-rule="evenodd" font-weight="400">
+    <text opacity=".71" font-size="20" transform="translate(8 8)">
+      <tspan x="399" y="67">MIT License</tspan>
+    </text>
+    <text font-size="36" transform="translate(8 8)">
+      <tspan x="0" y="34" fill-opacity=".87">nested[</tspan>
+      <tspan x="155.777344" y="34" class="green">query</tspan>
+      <tspan x="267.046875" y="34" fill-opacity=".87">]</tspan>
+      <tspan x="289.300781" y="34" class="orange">=</tspan>
+      <tspan x="311.554688" y="34" class="green">parameters</tspan>
+    </text>
+  </g>
+</svg>

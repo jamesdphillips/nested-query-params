@@ -1,0 +1,95 @@
+<svg width="1500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    text {
+      font-family: "SFMono-Regular", "SF Mono", Mono;
+    }
+
+    tspan {
+      fill: rgba(0, 0, 0, 0.87);
+
+      @media (prefers-color-scheme: dark) {
+        fill: rgba(255, 255, 255);
+      }
+    }
+
+    .blue {
+      fill: #0091ff;
+    }
+
+    .green {
+      fill: #44d7b6;
+    }
+
+    .orange {
+      fill: #fa6400;
+    }
+
+    .purple {
+      fill: #6236ff;
+    }
+
+    .deemphasize {
+      fill-opacity: 0.67;
+    }
+  </style>
+  <g fill="none" fill-rule="evenodd">
+    <text opacity=".5" font-size="28">
+      <tspan x="58" y="192"></tspan>
+      <tspan x="231.085938" y="192" class="blue deemphasize">userinfo</tspan>
+      <tspan x="369.554688" y="192"></tspan>
+      <tspan x="490.714844" y="192" class="green deemphasize">host</tspan>
+      <tspan x="559.949219" y="192"></tspan>
+      <tspan x="663.800781" y="192" class="orange deemphasize">port</tspan>
+
+      <tspan x="58" y="226"></tspan>
+      <tspan x="231.085938" y="226" class="blue deemphasize">┌──┴───┐</tspan>
+      <tspan x="369.554688" y="226"></tspan>
+      <tspan x="386.863281" y="226" class="green deemphasize">
+        ┌──────┴──────┐
+      </tspan>
+      <tspan x="646.492188" y="226"></tspan>
+      <tspan x="663.800781" y="226" class="orange deemphasize">┌┴┐</tspan>
+
+      <tspan x="58" y="260"></tspan>
+      <tspan x="92.6171875" y="260" fill-opacity=".5">
+        https://john.doe@www.example.com:123/forum/questions/
+      </tspan>
+      <tspan x="1009.97266" y="260" font-weight="400">
+        ?foo[bar]=baz&amp;foo[baz]=42
+      </tspan>
+
+      <tspan x="58" y="294"></tspan>
+      <tspan x="92.6171875" y="294" class="orange deemphasize">└─┬─┘</tspan>
+      <tspan x="179.160156" y="294" class="orange"></tspan>
+      <tspan x="196.46875" y="294"></tspan>
+      <tspan x="231.085938" y="294" class="purple deemphasize">
+        └───────────┬──────────────┘
+      </tspan>
+      <tspan x="715.726562" y="294" class="blue deemphasize">
+        └───────┬───────┘
+      </tspan>
+      <tspan x="1009.97266" y="294" font-weight="bold" class="orange">
+        └───────────┬───────────┘
+      </tspan>
+
+      <tspan x="58" y="328"></tspan>
+      <tspan x="92.6171875" y="328" class="orange deemphasize">scheme</tspan>
+      <tspan x="196.46875" y="328"></tspan>
+      <tspan x="369.554688" y="328" class="purple deemphasize">authority</tspan>
+      <tspan x="525.332031" y="328"></tspan>
+      <tspan x="836.886719" y="328" class="blue deemphasize">path</tspan>
+      <tspan x="906.121094" y="328"></tspan>
+      <tspan x="1183.05859" y="328" font-weight="bold" class="orange">
+        query
+      </tspan>
+    </text>
+    <g font-weight="400">
+      <text font-size="36" transform="translate(483 381)">
+        <tspan x="0" y="34">nested[query]=parameters</tspan>
+      </text>
+      <text opacity=".5" font-size="20" transform="translate(483 381)">
+        <tspan x="399" y="66">MIT License</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

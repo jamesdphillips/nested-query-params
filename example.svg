@@ -1,0 +1,90 @@
+<svg width="1417" height="202" xmlns="http://www.w3.org/2000/svg">
+  <text
+    fill="none"
+    fill-rule="evenodd"
+    font-family="SFMono-Regular, SF Mono"
+    font-size="28"
+  >
+    <style>
+      text {
+        font-family: "SFMono-Regular", "SF Mono", Mono;
+      }
+
+      tspan {
+        fill: rgba(0, 0, 0, 0.87);
+
+        @media (prefers-color-scheme: dark) {
+          fill: rgba(255, 255, 255);
+        }
+      }
+
+      .blue {
+        fill: #0091ff;
+      }
+
+      .green {
+        fill: #44d7b6;
+      }
+
+      .orange {
+        fill: #fa6400;
+      }
+
+      .purple {
+        fill: #6236ff;
+      }
+
+      .deemphasize {
+        fill-opacity: 0.67;
+      }
+    </style>
+    <tspan x="16" y="43"></tspan>
+    <tspan x="189.085938" y="43" class="blue deemphasize">userinfo</tspan>
+    <tspan x="327.554688" y="43"></tspan>
+    <tspan x="448.714844" y="43" class="green deemphasize">host</tspan>
+    <tspan x="517.949219" y="43"></tspan>
+    <tspan x="621.800781" y="43" class="orange deemphasize">port</tspan>
+
+    <tspan x="16" y="77"></tspan>
+    <tspan x="189.085938" y="77" class="blue deemphasize">┌──┴───┐</tspan>
+    <tspan x="327.554688" y="77"></tspan>
+    <tspan x="344.863281" y="77" class="green deemphasize">
+      ┌──────┴──────┐
+    </tspan>
+    <tspan x="604.492188" y="77"></tspan>
+    <tspan x="621.800781" y="77" class="orange deemphasize">┌┴┐</tspan>
+
+    <tspan x="16" y="111"></tspan>
+    <tspan x="50.6171875" y="111" fill-opacity=".50491696">
+      https://john.doe@www.example.com:123/forum/questions/
+    </tspan>
+    <tspan x="967.972656" y="111" font-weight="400">
+      ?foo[bar]=baz&amp;foo[baz]=42
+    </tspan>
+
+    <tspan x="16" y="145"></tspan>
+    <tspan x="50.6171875" y="145" class="orange deemphasize">└─┬─┘</tspan>
+    <tspan x="137.160156" y="145" class="orange"></tspan>
+    <tspan x="154.46875" y="145"></tspan>
+    <tspan x="189.085938" y="145" class="purple deemphasize">
+      └───────────┬──────────────┘
+    </tspan>
+    <tspan x="673.726562" y="145" class="blue deemphasize">
+      └───────┬───────┘
+    </tspan>
+    <tspan x="967.972656" y="145" font-weight="bold" class="orange">
+      └───────────┬───────────┘
+    </tspan>
+
+    <tspan x="16" y="179"></tspan>
+    <tspan x="50.6171875" y="179" class="orange deemphasize">scheme</tspan>
+    <tspan x="154.46875" y="179"></tspan>
+    <tspan x="327.554688" y="179" class="purple deemphasize">authority</tspan>
+    <tspan x="483.332031" y="179"></tspan>
+    <tspan x="794.886719" y="179" class="blue deemphasize">path</tspan>
+    <tspan x="864.121094" y="179"></tspan>
+    <tspan x="1141.05859" y="179" font-weight="bold" class="orange">
+      query
+    </tspan>
+  </text>
+</svg>
