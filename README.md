@@ -1,22 +1,8 @@
-<p align="center">
-  <img src="./logo.svg" width="120px"/>
-</p>
-
-<h3 align="center">Nested Query Params</h3>
-<p align="center">
-    A TypeScript implementation of Rack's query string parser.
-</p>
-<p align="center">
-  <a href="#">
-    <img src="https://img.shields.io/github/commit-activity/m/jamesdphillips/nested-query-params.svg?style=flat" />
-  </a>
-  <a href="https://github.com/jamesdphillips/nested-query-params/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jamesdphillips/nested-query-params.svg?style=flat" />
-  </a>
-  <a href="https://circleci.com/gh/jamesdphillips/nested-query-params/tree/main">
-    <img src="https://circleci.com/gh/jamesdphillips/nested-query-params/tree/main.svg?style=svg" />
-  </a>
-</p>
+<header align="center">
+  <p align="center"><img align="center" src="./logo.svg" width="200px"/></p>
+  <h3 align="center">Nested Query Params</h3>
+  <p align="center">A TypeScript implementation of Rack's query string parser.</p>
+</header>
 
 ## Overview
 
