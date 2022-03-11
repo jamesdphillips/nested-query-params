@@ -2,12 +2,10 @@
   <img src="./logo.svg" width="120px"/>
 </p>
 
-<h2 align="center">Nested Query Params</h2>
-
+<h3 align="center">Nested Query Params</h3>
 <p align="center">
     A TypeScript implementation of Rack's query string parser.
 </p>
-
 <p align="center">
   <a href="#">
     <img src="https://img.shields.io/github/commit-activity/m/jamesdphillips/nested-query-params.svg?style=flat" />
@@ -23,7 +21,7 @@
 ## Overview
 
 <p align="center">
-  <img src="./example.svg" width="560px"/>
+  <img src="./example.svg" width="640px"/>
 </p>
 
 A TypeScript implementation of Rack's [query string parser]. Allows query strings to be expanded into "structural" types; objects, arrays, and string values are supported.
