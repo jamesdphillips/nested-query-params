@@ -1,21 +1,43 @@
 <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  <style>
+  text {
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+    font-weight: 400;
+    fill: #fff;
+  }
+
+      .blue {
+        fill: #0091ff;
+      }
+
+      .green {
+        fill: #44d7b6;
+      }
+
+      .orange {
+        fill: #fa6400;
+      }
+
+      .purple {
+        fill: #6236ff;
+      }
+  </style>
+
   <g fill="none" fill-rule="evenodd">
-    <path fill="#6236FF" d="M0 0h500v500H0z" />
+    <path class="purple" d="M0 0h500v500H0z" />
     <text
       opacity=".71"
       font-family="SFMono-Medium, SF Mono"
       font-size="20"
-      font-weight="400"
-      fill="#FFF"
     >
       <tspan x="442" y="475">ISC</tspan>
     </text>
-    <text font-family="SFMono-Medium, SF Mono" font-size="64" font-weight="400">
-      <tspan x="112" y="273" fill="#FFF" fill-opacity=".87">?m[</tspan>
-      <tspan x="230.6875" y="273" fill="#44D7B6">k</tspan>
-      <tspan x="270.25" y="273" fill="#FFF" fill-opacity=".87">]</tspan>
-      <tspan x="309.8125" y="273" fill="#FA6400">=</tspan>
-      <tspan x="349.375" y="273" fill="#44D7B6">v</tspan>
+    <text font-family="SFMono-Medium, SF Mono" font-size="64">
+      <tspan x="112" y="273" fill-opacity=".87">?m[</tspan>
+      <tspan x="230.6875" y="273" class="green">k</tspan>
+      <tspan x="270.25" y="273" fill-opacity=".87">]</tspan>
+      <tspan x="309.8125" y="273" class="orange">=</tspan>
+      <tspan x="349.375" y="273" class="green">v</tspan>
     </text>
   </g>
 </svg>

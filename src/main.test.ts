@@ -4,7 +4,7 @@ import {
   SearchParamPathComponentKind,
 } from "./main";
 
-describe("parseNestedSearchParamKey", () => {
+describe("parseSearchParamKey", () => {
   it("parses nested keys properly", () => {
     expect(parseQueryParamKey("test")).toEqual([
       [SearchParamPathComponentKind.Map, "test"],
@@ -35,7 +35,9 @@ describe("parseNestedSearchParamKey", () => {
       [SearchParamPathComponentKind.List],
     ]);
   });
+});
 
+describe("parseQuery", () => {
   it("parses nested queries properly", () => {
     expect(parseQuery("?foo=bar")).toEqual({
       foo: "bar",

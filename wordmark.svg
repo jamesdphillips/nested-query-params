@@ -1,7 +1,7 @@
 <svg width="551" height="88" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
-      font-family: "SFMono-Regular", "SF Mono", Mono;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     }
 
     tspan {

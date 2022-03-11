@@ -31,7 +31,7 @@ export type SearchParamPathComponent =
   | [SearchParamPathComponentKind.Map, string]
   | [SearchParamPathComponentKind.List];
 
-const console = prepareConsole(window.console, "nested-query-params");
+const logger = prepareConsole(console, "nested-query-params");
 
 /**
  * Expands a search params into structural types. Supported types are Arrays,
@@ -91,7 +91,7 @@ function applyNestedParam(
     return params;
   }
   if (head[0] !== SearchParamPathComponentKind.Map) {
-    console.warn("#applyNestedParam", "cannot apply list op to root");
+    logger.warn("#applyNestedParam", "cannot apply list op to root");
     return params;
   }
   return applyComponent(params, comps, value) as SearchParams;
@@ -102,7 +102,7 @@ function applyComponent(
   comps: SearchParamPathComponent[],
   value: SearchParamVal,
 ): SearchParamVal {
-  const log = prepareConsole(console, "#applyComponent");
+  const log = prepareConsole(logger, "#applyComponent");
   const [head, ...rest] = comps;
   if (!head) {
     return params;

@@ -10,32 +10,7 @@ executors:
     docker:
       - image: circleci/node:lts
 
-commands:
-  install_deps:
-    description: "Install dependencies"
-    steps:
-      - restore_cache:
-          name: Restore Yarn Package Cache
-          keys:
-            - yarn-packages-{{ checksum "yarn.lock" }}
-      - run:
-          name: Install Dependencies
-          command: yarn install --frozen-lockfile
-      - save_cache:
-          name: Save Yarn Package Cache
-          key: yarn-packages-{{ checksum "yarn.lock" }}
-          paths:
-            - ~/.cache/yarn
-
 jobs:
-  lint:
-    executor: build_env
-    steps:
-      - checkout
-      - install_deps
-      - run:
-          name: Lint
-          command: yarn test:lint
   spec:
     executor: build_env
     environment:
@@ -43,10 +18,9 @@ jobs:
       JEST_JUNIT_OUTPUT_NAME: "results.xml"
     steps:
       - checkout
-      - install_deps
       - run:
           name: Run unit tests
-          command: yarn test --ci --reporters=default --reporters=jest-junit
+          command: npm test -- --ci --reporters=default --reporters=jest-junit
       - store_test_results:
           path: test-results
 
@@ -54,5 +28,4 @@ workflows:
   version: 2
   quality:
     jobs:
-      - lint
       - spec
