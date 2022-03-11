@@ -10,7 +10,7 @@
   <a href="#">
     <img src="https://img.shields.io/github/commit-activity/m/jamesdphillips/nested-query-params.svg?style=flat" />
   </a>
-  <a href="https://github.com/jamesdphillips/nested-query-params/blob/master/LICENSE">
+  <a href="https://github.com/jamesdphillips/nested-query-params/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/jamesdphillips/nested-query-params.svg?style=flat" />
   </a>
   <a href="https://circleci.com/gh/jamesdphillips/nested-query-params/tree/main">
