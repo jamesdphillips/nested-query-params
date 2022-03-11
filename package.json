@@ -1,6 +1,6 @@
 {
   "name": "nested-query-params",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rack like parsing of nested query parameters",
   "scripts": {
     "build": "rm -r lib && npx tsc -p ./",
@@ -16,7 +16,7 @@
     "string",
     "parser"
   ],
-  "main": "lib/index.js",
+  "main": "lib/main.js",
   "directories": {
     "lib": "lib"
   },
