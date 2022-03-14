@@ -1,35 +1,32 @@
 <svg width="500" height="500" xmlns="http://www.w3.org/2000/svg">
   <style>
-  text {
-    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-    font-weight: 400;
-    fill: #fff;
-  }
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
+      font-weight: 400;
+      fill: #fff;
+    }
 
-      .blue {
-        fill: #0091ff;
-      }
+    .blue {
+      fill: #0091ff;
+    }
 
-      .green {
-        fill: #44d7b6;
-      }
+    .green {
+      fill: #44d7b6;
+    }
 
-      .orange {
-        fill: #fa6400;
-      }
+    .orange {
+      fill: #fa6400;
+    }
 
-      .purple {
-        fill: #6236ff;
-      }
+    .purple {
+      fill: #6236ff;
+    }
   </style>
 
   <g fill="none" fill-rule="evenodd">
     <path class="purple" d="M0 0h500v500H0z" />
-    <text
-      opacity=".71"
-      font-family="SFMono-Medium, SF Mono"
-      font-size="20"
-    >
+    <text opacity=".71" font-family="SFMono-Medium, SF Mono" font-size="20">
       <tspan x="442" y="475">ISC</tspan>
     </text>
     <text font-family="SFMono-Medium, SF Mono" font-size="64">

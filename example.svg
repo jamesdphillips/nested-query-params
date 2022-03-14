@@ -1,45 +1,42 @@
 <svg width="1417" height="202" xmlns="http://www.w3.org/2000/svg">
-    <style>
-      text {
-        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-      }
+  <style>
+    text {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
+    }
 
+    tspan {
+      fill: var(--color-fg-default, rgba(0, 0, 0, 0.87));
+    }
+
+    @media (prefers-color-scheme: dark) {
       tspan {
-        fill: rgba(0, 0, 0, 0.87);
+        fill: var(--color-fg-default, rgb(255, 255, 255));
       }
+    }
 
-      @media (prefers-color-scheme: dark) {
-        tspan {
-          fill: rgba(255, 255, 255);
-        }
-      }
+    .blue {
+      fill: #0091ff;
+    }
 
-      .blue {
-        fill: #0091ff;
-      }
+    .green {
+      fill: #44d7b6;
+    }
 
-      .green {
-        fill: #44d7b6;
-      }
+    .orange {
+      fill: #fa6400;
+    }
 
-      .orange {
-        fill: #fa6400;
-      }
+    .purple {
+      fill: #6236ff;
+    }
 
-      .purple {
-        fill: #6236ff;
-      }
+    .deemphasize {
+      fill-opacity: 0.67;
+    }
+  </style>
 
-      .deemphasize {
-        fill-opacity: 0.67;
-      }
-    </style>
-
-  <text
-    fill="none"
-    fill-rule="evenodd"
-    font-size="28"
-  >
+  <text fill="none" fill-rule="evenodd" font-size="28">
     <tspan x="16" y="43"></tspan>
     <tspan x="189.085938" y="43" class="blue deemphasize">userinfo</tspan>
     <tspan x="327.554688" y="43"></tspan>

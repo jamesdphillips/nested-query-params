@@ -1,14 +1,17 @@
 <svg width="551" height="88" xmlns="http://www.w3.org/2000/svg">
   <style>
     text {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+        "Liberation Mono", monospace;
     }
 
     tspan {
-      fill: rgb(0, 0, 0);
+      fill: var(--color-fg-default, rgba(0, 0, 0, 0.87));
+    }
 
-      @media (prefers-color-scheme: dark) {
-        fill: rgb(255, 255, 255);
+    @media (prefers-color-scheme: dark) {
+      tspan {
+        fill: var(--color-fg-default, rgb(255, 255, 255));
       }
     }
 
