@@ -1,38 +1,35 @@
-import {
-  parseQuery,
-  parseQueryParamKey,
-  SearchParamPathComponentKind,
-} from "./main";
+import { parseQuery, parseQueryParamKey } from "./parse";
+import { QueryParamPathComponentKind } from "./types";
 
 describe("parseSearchParamKey", () => {
   it("parses nested keys properly", () => {
     expect(parseQueryParamKey("test")).toEqual([
-      [SearchParamPathComponentKind.Map, "test"],
+      [QueryParamPathComponentKind.Map, "test"],
     ]);
     expect(parseQueryParamKey("test[key]")).toEqual([
-      [SearchParamPathComponentKind.Map, "test"],
-      [SearchParamPathComponentKind.Map, "key"],
+      [QueryParamPathComponentKind.Map, "test"],
+      [QueryParamPathComponentKind.Map, "key"],
     ]);
     expect(parseQueryParamKey("foo[bar][baz]")).toEqual([
-      [SearchParamPathComponentKind.Map, "foo"],
-      [SearchParamPathComponentKind.Map, "bar"],
-      [SearchParamPathComponentKind.Map, "baz"],
+      [QueryParamPathComponentKind.Map, "foo"],
+      [QueryParamPathComponentKind.Map, "bar"],
+      [QueryParamPathComponentKind.Map, "baz"],
     ]);
     expect(parseQueryParamKey("foo[bar][][baz]")).toEqual([
-      [SearchParamPathComponentKind.Map, "foo"],
-      [SearchParamPathComponentKind.Map, "bar"],
-      [SearchParamPathComponentKind.List],
-      [SearchParamPathComponentKind.Map, "baz"],
+      [QueryParamPathComponentKind.Map, "foo"],
+      [QueryParamPathComponentKind.Map, "bar"],
+      [QueryParamPathComponentKind.List],
+      [QueryParamPathComponentKind.Map, "baz"],
     ]);
     expect(parseQueryParamKey("foo[]")).toEqual([
-      [SearchParamPathComponentKind.Map, "foo"],
-      [SearchParamPathComponentKind.List],
+      [QueryParamPathComponentKind.Map, "foo"],
+      [QueryParamPathComponentKind.List],
     ]);
     expect(parseQueryParamKey("foo[][bar][]")).toEqual([
-      [SearchParamPathComponentKind.Map, "foo"],
-      [SearchParamPathComponentKind.List],
-      [SearchParamPathComponentKind.Map, "bar"],
-      [SearchParamPathComponentKind.List],
+      [QueryParamPathComponentKind.Map, "foo"],
+      [QueryParamPathComponentKind.List],
+      [QueryParamPathComponentKind.Map, "bar"],
+      [QueryParamPathComponentKind.List],
     ]);
   });
 });
