@@ -21,7 +21,7 @@ npm i -D nested-query-params
 ## Usage
 
 ```typescript
-import { parseQuery } from "nested-query-params";
+import { parseQuery, printQuery } from "nested-query-params";
 
 // maps
 const map = parseQuery("?foo[bar]=baz");
@@ -34,6 +34,14 @@ console.debug(list.foo); // prints ["bar", "baz"]
 // mixed
 const mixed = parseQuery("?bar=baz&foo[bar][]=baz&foo[bar][]=42");
 console.debug(mixed); // prints { bar: "baz", foo: { bar: ["baz", "42"] } }
+
+// print
+const simple = parseQuery("?foo[bar]=baz");
+console.debug(printQuery(simple)); // prints "?foo[bar]=baz"
+
+// print valid
+const edited = { ...simple, foo: "bar" };
+console.debug(printQuery(edited)); // prints "?foo=bar"
 ```
 
 [query string parser]: https://github.com/rack/rack/blob/bad8fe37c8867596855dcd0b3fe3030acc6b8621/lib/rack/query_parser.rb#L63
