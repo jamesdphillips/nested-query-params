@@ -1,8 +1,9 @@
 {
   "name": "nested-query-params",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Rack like parsing of nested query parameters",
   "scripts": {
+    "prepublish": "npm run build",
     "build": "rm -r lib && npx tsc -p ./",
     "format": "prettier --write .",
     "test": "jest"
