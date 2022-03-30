@@ -15,3 +15,6 @@
 export * from "./parse";
 export * from "./print";
 export * from "./types";
+
+export { printQuery as print } from "./print";
+export { parseQuery as parse } from "./parse";
